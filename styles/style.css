@@ -109,3 +109,141 @@ body {
         font-size: 2rem;
     }
 }
+
+/* In style.css */
+:root {
+    --primary-color: #2c3e50; /* Navy blue */
+    --secondary-color: #3498db; /* Sky blue */
+    --accent-color: #e74c3c; /* Red */
+    --background-color: #ecf0f1; /* Light gray */
+    --text-color: #2c3e50; /* Dark gray */
+}
+/* Navigation */
+.navbar {
+    background: var(--background-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links a {
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('assets/images/background.jpg') center/cover;
+    color: white;
+}
+
+.cta-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: 2px solid var(--secondary-color);
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: white;
+    color: var(--secondary-color);
+}
+
+/* Projects Section */
+.project-card {
+    background: white;
+    border: 1px solid var(--background-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Contact Section */
+.contact {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#contact-form input, #contact-form textarea {
+    border: 1px solid var(--background-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+#contact-form button {
+    background: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#contact-form button:hover {
+    transform: translateY(-5px);
+}
+/* Gradient Backgrounds */
+.project-tools {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-tools span {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Social Links (Add to Footer) */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    border-radius: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(2);
+}
+
+.copyright {
+    color: var(--text-color);
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.footer {
+    background: var(--background-color);
+    padding: 5rem;
+    text-align: var(rgb(35, 117, 199)) ;
+    margin-top: 4rem;
+}
